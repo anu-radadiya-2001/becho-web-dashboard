@@ -1,0 +1,40 @@
+@import "variables";
+@import "./layout/sidebar";
+@import "./layout/container";
+@import "./layout/dashboard";
+@import "./layout/auth";
+
+.otp-group {
+  display: flex;
+  width: 100%;
+  max-width: 410px;
+  column-gap: 10px;
+  gap: 10px;
+  justify-content: center;
+}
+
+.otp-input {
+  width: 58px;
+  height: 58px;
+  border: 1px solid  rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  line-height: 1;
+  color: #1c1c1c;
+  background: #fff;
+}
+
+.custom-toggle{
+  transform: translate(-50%,-50%);
+}
+@media screen  and (max-width:450px){
+  .otp-input{
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    gap: 5px;
+  }
+}
